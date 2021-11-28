@@ -4,7 +4,6 @@ Changed the Positon of the shapes to create beach scene Also tweaked with the va
 The Arduino file that's running is "threeSensorExample"
 */
 
-let song; //song we are going to play
 let playing = false;
 let serial;
 let latestData = "waiting for data"; // you'll use this to write incoming data to the canvas
@@ -18,7 +17,6 @@ let fft;
 function setup() {
 
     createCanvas(windowWidth, windowHeight);
-    song = loadSound('assets/assets_audio_Basquiat.mp3'); //song chosen from the assets folder
 
     // Instantiate our SerialPort object
     serial = new p5.SerialPort();
